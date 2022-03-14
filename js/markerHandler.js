@@ -26,21 +26,9 @@ AFRAME.registerComponent("markerhandler", {
   askTableNumber: function () {
     var iconUrl = "https://raw.githubusercontent.com/whitehatjr/menu-card-app/main/hunger.png";
 
-    swal({
-      title: "Welcome to Hunger!!",
-      icon: iconUrl,
-      content: {
-        element: "input",
-        attributes: {
-          placeholder: "Type your table number",
-          type: "number",
-          min: 1
-        }
-      },
-      closeOnClickOutside: false,
-    }).then(inputValue => {
-      tableNumber = inputValue;
-    });
+   //Add Code Here
+    
+    
   },
 
   handleMarkerFound: function (dishes, markerId) {
@@ -79,7 +67,8 @@ AFRAME.registerComponent("markerhandler", {
       model.setAttribute("scale", dish.model_geometry.scale);
 
      
-      //Code...
+      //ADD CODE HERE FOR MODEL VISIBILITY
+      
 
 
       //Changing button div visibility
@@ -100,7 +89,9 @@ AFRAME.registerComponent("markerhandler", {
         });
 
         orderButtton.addEventListener("click", () => {
-        //Code...
+        
+          
+          //ADD CODE HERE
 
 
         
