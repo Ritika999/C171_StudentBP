@@ -67,8 +67,14 @@ AFRAME.registerComponent("markerhandler", {
       model.setAttribute("scale", dish.model_geometry.scale);
 
      
-      //ADD CODE HERE FOR MODEL VISIBILITY
-      
+      //C271: HERE IS THE CODE FOR MODEL VISIBILITY
+       model.setAttribute("visible", true);
+
+      var ingredientsContainer = document.querySelector(`#main-plane-${dish.id}`);
+      ingredientsContainer.setAttribute("visible", true);
+
+      var priceplane = document.querySelector(`#price-plane-${dish.id}`);
+      priceplane.setAttribute("visible", true)
 
 
       //Changing button div visibility
